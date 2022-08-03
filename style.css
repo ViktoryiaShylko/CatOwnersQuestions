@@ -1,0 +1,9 @@
+.input{
+    width: 200px;
+}
+input:required:valid {
+    border-color: rgb(168, 255, 168);
+}
+input:required:invalid {
+    border-color: rgb(255, 168, 168);
+}

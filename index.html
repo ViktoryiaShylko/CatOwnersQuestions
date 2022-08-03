@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Страница-опрооник для обладателей котиков</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>Опросник для обладателей котиков</h1>
+    <form>
+      <div>
+        <label for="petName">Кличка питомца:</label>
+        <input type="text" class="input" id="petName" placeholder="Введите имя вашего питомца..." required/>*
+      </div>
+      <div>
+        <label for="age">Возраст питомца:</label>
+        <input type="number" class="input" id="age" min="1" max="30" required/>*
+      </div>
+      <fieldset>
+        <legend>Владелец:</legend>
+        <div>
+          <label for="ownerName">Имя:</label>
+          <input type="text" class="input" id="ownerName" placeholder="Введите ваше имя..." required/>*
+        </div>
+        <div>
+            <label for="ownerEmail">Email:</label>
+            <input type="email" class="input" id="ownerEmail" placeholder="Введите ваш email..." required/>*
+        </div>
+        <div>
+          <label for="phoneNumber">Номер телефона:</label>
+          <input type="tel" class="input" id="phoneNumber" placeholder="+7xxx-xxx-xx-xx" pattern="^\+7\d{3}-\d{3}-\d{2}-\d{2}$" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Выберите породу:</legend>
+          <select>
+            <option value="Выберите породу" selected>Выберите породу</option>
+            <option value="Абиссинская Кошка">Абиссинская Кошка</option>
+            <option value="Азиатская Кошка">Азиатская Кошка</option>
+            <option value="Австралийский Мист">Австралийский Мист</option>
+            <option value="Балийская Кошка">Балийская Кошка</option>
+            <option value="Турецкий Ван">Турецкий Ван</option>
+            <option value="Сомалийская Кошка">Сомалийская Кошка</option>
+            <option value="Сингапура">Сингапура</option>
+            <option value="Сиамская">Сиамская</option>
+            <option value="Египетский Мау">Египетский Мау</option>
+            <option value="Другая">Другая</option>
+          </select>
+      </fieldset>
+      <fieldset>
+        <legend>Чем питается:</legend>
+        <div>
+          <label for="dryFood">Сухой корм</label>
+          <input type="checkbox" value="dryFood" id="dryFood" />
+        </div>
+        <div>
+          <label for="wetFood">Влажный корм</label>
+          <input type="checkbox" value="wetFood" id="wetFood" />
+        </div>
+        <div>
+          <label for="naturalFood">Натуральный корм</label>
+          <input type="checkbox" value="naturalFood" id="naturalFood" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Пол питомца:</legend>
+        <div>
+          <label for="female">Самка</label>
+          <input type="radio" value="female" id="female" name="sex" />
+        </div>
+        <div>
+          <label for="male">Самец</label>
+          <input type="radio" value="male" id="male" name="sex" />
+        </div>
+      </fieldset>
+      <div>
+        <p>Комментарий владельца:</p>
+        <textarea rows="10"></textarea>
+      </div>
+      <div>
+        <label for="file">Фото вашего питомца:</label>
+        <input type="file" id="file" multiple />
+      </div>
+      <div><button id="btnSubmit" >Сохранить</button></div>
+      <div><button id="btnReset" >Очистить форму</button></div>
+    </form>
+
+  <script src="/script.js"></script>  
+  </body>
+</html>
