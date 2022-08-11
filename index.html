@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Опросник для обладателей котиков</h1>
-    <form>
+    <form id="form">
       <div>
         <label for="petName">Кличка питомца:</label>
         <input type="text" class="input" id="petName" placeholder="Введите имя вашего питомца..." required/>*
@@ -35,7 +35,7 @@
       </fieldset>
       <fieldset>
         <legend>Выберите породу:</legend>
-          <select>
+          <select id="breed">
             <option value="Выберите породу" selected>Выберите породу</option>
             <option value="Абиссинская Кошка">Абиссинская Кошка</option>
             <option value="Азиатская Кошка">Азиатская Кошка</option>
@@ -53,31 +53,31 @@
         <legend>Чем питается:</legend>
         <div>
           <label for="dryFood">Сухой корм</label>
-          <input type="checkbox" value="dryFood" id="dryFood" />
+          <input type="checkbox" class="food" value="Сухой корм" id="dryFood" />
         </div>
         <div>
           <label for="wetFood">Влажный корм</label>
-          <input type="checkbox" value="wetFood" id="wetFood" />
+          <input type="checkbox" class="food" value="Влажный корм" id="wetFood" />
         </div>
         <div>
           <label for="naturalFood">Натуральный корм</label>
-          <input type="checkbox" value="naturalFood" id="naturalFood" />
+          <input type="checkbox" class="food" value="Натуральный корм" id="naturalFood" />
         </div>
       </fieldset>
       <fieldset>
         <legend>Пол питомца:</legend>
         <div>
           <label for="female">Самка</label>
-          <input type="radio" value="female" id="female" name="sex" />
+          <input type="radio" value="Самка" id="female" name="sex" />
         </div>
         <div>
           <label for="male">Самец</label>
-          <input type="radio" value="male" id="male" name="sex" />
+          <input type="radio" value="Самец" id="male" name="sex" />
         </div>
       </fieldset>
       <div>
         <p>Комментарий владельца:</p>
-        <textarea rows="10"></textarea>
+        <textarea rows="10" id="comments"></textarea>
       </div>
       <div>
         <label for="file">Фото вашего питомца:</label>
